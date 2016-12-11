@@ -11,7 +11,7 @@ public class GridFrameLayout {
 
     private static void createGUI() {
         JFrame frame = new JFrame("Test frame");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //завершить процесс работы при закрытии окна
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Р·Р°РІРµСЂС€РёС‚СЊ РїСЂРѕС†РµСЃСЃ СЂР°Р±РѕС‚С‹ РїСЂРё Р·Р°РєСЂС‹С‚РёРё РѕРєРЅР°
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(3, 2));
 
@@ -22,10 +22,10 @@ public class GridFrameLayout {
         panel.add(new Button("5"));
         panel.add(new Button("6"));
 
-        //панель на фрейс
+        //РїР°РЅРµР»СЊ РЅР° С„СЂРµР№СЃ
         frame.getContentPane().add(panel);
         frame.setPreferredSize(new Dimension (550, 300));
-        frame.pack(); //автоматически вписываем в размеры окна
+        frame.pack(); //Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІРїРёСЃС‹РІР°РµРј РІ СЂР°Р·РјРµСЂС‹ РѕРєРЅР°
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
     }

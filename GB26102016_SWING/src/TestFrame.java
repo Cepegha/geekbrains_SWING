@@ -4,7 +4,7 @@ import java.awt.*;
 /**
  * Created by cepegha@gmail.com on 07.12.2016.
  *
- * BorderLayout - размещение по статическим зонам на панели
+ * BorderLayout - СЂР°Р·РјРµС‰РµРЅРёРµ РїРѕ СЃС‚Р°С‚РёС‡РµСЃРєРёРј Р·РѕРЅР°Рј РЅР° РїР°РЅРµР»Рё
  *
  */
 public class TestFrame {
@@ -14,11 +14,11 @@ public class TestFrame {
 
     private static void createGUI() {
         JFrame frame = new JFrame("Test frame");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //завершить процесс работы при закрытии окна
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Р·Р°РІРµСЂС€РёС‚СЊ РїСЂРѕС†РµСЃСЃ СЂР°Р±РѕС‚С‹ РїСЂРё Р·Р°РєСЂС‹С‚РёРё РѕРєРЅР°
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
 
-        //добавление компонентов на панель по статическим полям
+        //РґРѕР±Р°РІР»РµРЅРёРµ РєРѕРјРїРѕРЅРµРЅС‚РѕРІ РЅР° РїР°РЅРµР»СЊ РїРѕ СЃС‚Р°С‚РёС‡РµСЃРєРёРј РїРѕР»СЏРј
         JButton northButton = new JButton("NORTH (PAGE_START) ");
         panel.add(northButton, BorderLayout.NORTH);
 
@@ -34,10 +34,10 @@ public class TestFrame {
         JButton centerButton = new JButton("CENTER");
         panel.add(centerButton, BorderLayout.CENTER);
 
-        //панель на фрейм
+        //РїР°РЅРµР»СЊ РЅР° С„СЂРµР№Рј
         frame.getContentPane().add(panel);
         frame.setPreferredSize(new Dimension (550, 300));
-        frame.pack(); //автоматически вписываем в размеры окна
+        frame.pack(); //Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІРїРёСЃС‹РІР°РµРј РІ СЂР°Р·РјРµСЂС‹ РѕРєРЅР°
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
     }

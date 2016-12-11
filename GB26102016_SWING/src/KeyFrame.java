@@ -35,7 +35,7 @@ public class KeyFrame extends JFrame {
         Listener lis = new Listener();
         panel.addKeyListener(lis);
 
-        /* 2 вариант ловить нажатия
+        /* 2 РІР°СЂРёР°РЅС‚ Р»РѕРІРёС‚СЊ РЅР°Р¶Р°С‚РёСЏ
         panel.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
@@ -45,13 +45,13 @@ public class KeyFrame extends JFrame {
         */
         panel.add(label, BorderLayout.CENTER);
 
-        setPreferredSize(new Dimension(200, 200)); //предпочтительный размер
-        getContentPane().add(panel); //тоже самое что Frame.add...
+        setPreferredSize(new Dimension(200, 200)); //РїСЂРµРґРїРѕС‡С‚РёС‚РµР»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ
+        getContentPane().add(panel); //С‚РѕР¶Рµ СЃР°РјРѕРµ С‡С‚Рѕ Frame.add...
     }
 
     public static void main(String[] args) {
         KeyFrame frame = new KeyFrame();
-            frame.pack();//оптимизируем размер окна по предпочтительным размерам
+            frame.pack();//РѕРїС‚РёРјРёР·РёСЂСѓРµРј СЂР°Р·РјРµСЂ РѕРєРЅР° РїРѕ РїСЂРµРґРїРѕС‡С‚РёС‚РµР»СЊРЅС‹Рј СЂР°Р·РјРµСЂР°Рј
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
